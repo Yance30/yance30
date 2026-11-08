@@ -1,7 +1,11 @@
-<h1 align="center">Yance Adhy Nata Panjaitan</h1>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:70a5fd,100:bf91f3&height=200&section=header&text=Yance%20Adhy%20Nata%20Panjaitan&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+</p>
 
 <p align="center">
-  <b>Building web applications and analytics dashboards that turn business needs into digital solutions.</b>
+  <a href="https://github.com/Yance30">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=70A5FD&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;Data+%26+Business+Intelligence;Mobile+Developer;Turning+business+needs+into+digital+solutions" />
+  </a>
 </p>
 
 <p align="center">
@@ -64,8 +68,20 @@ I am a developer focused on full-stack web development and data analytics. I bui
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Yance30&theme=tokyo-night&hide_border=true" />
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Yance30/yance30/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Yance30/yance30/output/github-snake.svg" />
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/Yance30/yance30/output/github-snake.svg" />
+  </picture>
+</p>
+
 ---
 
 <p align="center">
   <i>Open to collaboration on web development, data analytics, and mobile projects — reach me via <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/">LinkedIn</a>.</i>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:70a5fd,100:bf91f3&height=120&section=footer" width="100%" />
 </p>
