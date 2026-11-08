@@ -11,7 +11,7 @@
 
 Hi! I'm **Yance Adhy Nata Panjaitan**, a developer who enjoys building web applications and exploring data with Python.
 
-- 🔭 Currently working on **[PORTYANCE](https://github.com/Yance30/PORTYANCE)** — my personal portfolio website
+- 🔭 Currently working on **[PORTYANCE](https://portyance.vercel.app/)** — my personal portfolio website
 - 🌱 Currently learning **Big Data & Python data processing**
 - 💻 Interested in **Web Development, Data Engineering, and Backend Systems**
 - ⚡ Fun fact: I turn coursework into real projects
@@ -43,7 +43,7 @@ Hi! I'm **Yance Adhy Nata Panjaitan**, a developer who enjoys building web appli
 
 | Project | Deskripsi |
 |---|---|
-| [**PORTYANCE**](https://github.com/Yance30/PORTYANCE) | Website portofolio pribadi, dibangun dengan CSS. |
+| [**PORTYANCE**](https://portyance.vercel.app/) | Website portofolio pribadi — live di [portyance.vercel.app](https://portyance.vercel.app/). |
 | [**Jala**](https://github.com/Yance30/Jala) | Project berbasis Python. |
 | [**Tandur**](https://github.com/Yance30/Tandur) | Aplikasi berbasis JavaScript. |
 | [**Big-Data**](https://github.com/Yance30/Big-Data) | Eksplorasi pengolahan Big Data dengan Python. |
@@ -54,6 +54,8 @@ Hi! I'm **Yance Adhy Nata Panjaitan**, a developer who enjoys building web appli
 
 <p align="center">
   <a href="https://github.com/Yance30"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://portyance.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </p>
 
 ---
