@@ -42,14 +42,27 @@ I am a developer focused on full-stack web development and data analytics. I bui
 
 ## Featured Projects
 
-| Project | Description | Tech |
-|---|---|---|
-| [**JALA Fraud Analytics**](https://github.com/Yance30/Jala) | Dashboard for prioritizing BPJS health claims using synthetic data and graph-based fraud models. | Python, Streamlit, NetworkX |
-| [**Big-Data BI Dashboard**](https://github.com/Yance30/Big-Data) | Business Intelligence dashboard with CSV-to-MySQL ETL pipeline, predictive analytics (linear regression), and interactive visualizations. | Python, Streamlit, MySQL |
-| [**Tandur**](https://github.com/Yance30/Tandur) | Web prototype digitizing Islamic finance workflows (akad salam). | JavaScript, HTML, CSS |
-| **ExploreLocal** | Android app to discover local MSMEs, promotions, and locations. | Kotlin, Jetpack Compose, Supabase |
-| **NyaperGO** | Food-ordering platform with menu catalog, cart, and delivery management. | Laravel, PHP, Blade |
-| [**PORTYANCE**](https://portyance.vercel.app/) | Personal portfolio website showcasing projects and skills. | HTML, CSS, Vercel |
+<p align="center">
+  <a href="https://github.com/Yance30/Jala">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Jala&theme=tokyonight&hide_border=true" />
+  </a>
+  <a href="https://github.com/Yance30/Big-Data">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Big-Data&theme=tokyonight&hide_border=true" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Yance30/Tandur">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Tandur&theme=tokyonight&hide_border=true" />
+  </a>
+  <a href="https://github.com/Yance30/PORTYANCE">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=PORTYANCE&theme=tokyonight&hide_border=true" />
+  </a>
+</p>
+
+**More projects** (showcased on [portfolio](https://portyance.vercel.app/)):
+
+- **ExploreLocal** — Android app to discover local MSMEs, promotions, and locations · `Kotlin` `Jetpack Compose` `Supabase`
+- **NyaperGO** — Food-ordering platform with menu catalog, cart, and delivery management · `Laravel` `PHP` `Blade`
 
 ---
 
@@ -62,10 +75,6 @@ I am a developer focused on full-stack web development and data analytics. I bui
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yance30&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Yance30&theme=tokyo-night&hide_border=true" />
 </p>
 
 <p align="center">
