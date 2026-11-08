@@ -34,7 +34,20 @@ Hi! I'm **Yance Adhy Nata Panjaitan**, a developer who enjoys building web appli
 ## Skills & Technologies
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,php,html,css,mysql,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,js,ts,html,css,php,java,kotlin,cpp,dart&perline=10" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=flutter,react,nodejs,laravel,tailwind,supabase,mysql,figma,vercel,git,github,vscode&perline=12" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
+  <img src="https://img.shields.io/badge/osmdroid-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
 </p>
 
 ---
