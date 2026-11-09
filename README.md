@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:70a5fd,100:bf91f3&height=200&section=header&text=Yance%20Adhy%20Nata%20Panjaitan&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Yance%20Adhy%20Nata%20Panjaitan&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
 </p>
 
 <p align="center">
   <a href="https://github.com/Yance30">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=70A5FD&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;Data+%26+Business+Intelligence;Mobile+Developer;Turning+business+needs+into+digital+solutions" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;Data+%26+Business+Intelligence;Mobile+Developer;Turning+business+needs+into+digital+solutions" />
   </a>
 </p>
 
@@ -31,12 +31,12 @@ I am a developer focused on full-stack web development and data analytics. I bui
 
 | Category | Technologies |
 |---|---|
-| **Languages** | <img src="https://skillicons.dev/icons?i=python,js,ts,php,kotlin,dart,java,cpp" /> |
-| **Frontend** | <img src="https://skillicons.dev/icons?i=react,tailwind,html,css" /> <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white" /> |
-| **Backend & Database** | <img src="https://skillicons.dev/icons?i=laravel,nodejs,mysql,supabase" /> |
-| **Mobile** | <img src="https://skillicons.dev/icons?i=flutter" /> <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" /> <img src="https://img.shields.io/badge/osmdroid-3DDC84?style=flat-square&logo=android&logoColor=white" /> |
+| **Languages** | <img src="https://skillicons.dev/icons?i=python,js,ts,php,kotlin,dart,java,cpp&theme=dark" /> |
+| **Frontend** | <img src="https://skillicons.dev/icons?i=react,tailwind,html,css&theme=dark" /> <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white" /> |
+| **Backend & Database** | <img src="https://skillicons.dev/icons?i=laravel,nodejs,mysql,supabase&theme=dark" /> |
+| **Mobile** | <img src="https://skillicons.dev/icons?i=flutter&theme=dark" /> <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" /> <img src="https://img.shields.io/badge/osmdroid-3DDC84?style=flat-square&logo=android&logoColor=white" /> |
 | **Data & BI** | <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" /> <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" /> <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" /> |
-| **Tools** | <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,vercel" /> |
+| **Tools** | <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,vercel&theme=dark" /> |
 
 ---
 
@@ -44,18 +44,18 @@ I am a developer focused on full-stack web development and data analytics. I bui
 
 <p align="center">
   <a href="https://github.com/Yance30/Jala">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Jala&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Jala&theme=github_dark&hide_border=true" />
   </a>
   <a href="https://github.com/Yance30/Big-Data">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Big-Data&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Big-Data&theme=github_dark&hide_border=true" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/Yance30/Tandur">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Tandur&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Tandur&theme=github_dark&hide_border=true" />
   </a>
   <a href="https://github.com/Yance30/PORTYANCE">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=PORTYANCE&theme=tokyonight&hide_border=true" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=PORTYANCE&theme=github_dark&hide_border=true" />
   </a>
 </p>
 
@@ -69,12 +69,12 @@ I am a developer focused on full-stack web development and data analytics. I bui
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yance30&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yance30&layout=compact&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Yance30&show_icons=true&theme=github_dark&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yance30&layout=compact&theme=github_dark&hide_border=true" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yance30&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=Yance30&theme=github-dark-blue&hide_border=true" />
 </p>
 
 <p align="center">
@@ -92,5 +92,5 @@ I am a developer focused on full-stack web development and data analytics. I bui
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:70a5fd,100:bf91f3&height=120&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=120&section=footer" width="100%" />
 </p>
