@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Yance%20Adhy%20Nata%20Panjaitan&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+  <img src="assets/banner.svg" width="100%" />
 </p>
 
 <p align="center">
   <a href="https://github.com/Yance30">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;Data+%26+Business+Intelligence;Mobile+Developer;Turning+business+needs+into+digital+solutions" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;Data+%26+Business+Intelligence;Mobile+Developer" />
   </a>
 </p>
 
@@ -61,5 +61,5 @@ I am a developer focused on full-stack web development and data analytics. I bui
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=120&section=footer" width="100%" />
+  <img src="assets/footer.svg" width="100%" />
 </p>
