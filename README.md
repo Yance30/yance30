@@ -43,11 +43,6 @@ I am a developer focused on full-stack web development and data analytics. I bui
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yance30&show_icons=true&theme=github_dark&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yance30&layout=compact&theme=github_dark&hide_border=true" height="165" />
-</p>
-
-<p align="center">
   <img src="https://streak-stats.demolab.com?user=Yance30&theme=github-dark-blue&hide_border=true" />
 </p>
 
