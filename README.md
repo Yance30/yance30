@@ -40,32 +40,6 @@ I am a developer focused on full-stack web development and data analytics. I bui
 
 ---
 
-## Featured Projects
-
-<p align="center">
-  <a href="https://github.com/Yance30/Jala">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Jala&theme=github_dark&hide_border=true" />
-  </a>
-  <a href="https://github.com/Yance30/Big-Data">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Big-Data&theme=github_dark&hide_border=true" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/Yance30/Tandur">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=Tandur&theme=github_dark&hide_border=true" />
-  </a>
-  <a href="https://github.com/Yance30/PORTYANCE">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yance30&repo=PORTYANCE&theme=github_dark&hide_border=true" />
-  </a>
-</p>
-
-**More projects** (showcased on [portfolio](https://portyance.vercel.app/)):
-
-- **ExploreLocal** — Android app to discover local MSMEs, promotions, and locations · `Kotlin` `Jetpack Compose` `Supabase`
-- **NyaperGO** — Food-ordering platform with menu catalog, cart, and delivery management · `Laravel` `PHP` `Blade`
-
----
-
 ## GitHub Stats
 
 <p align="center">
