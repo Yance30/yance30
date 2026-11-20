@@ -51,7 +51,7 @@
     <path class="spark" d="M 136 36 l 3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#e3b341"/>
     <path class="spark s2" d="M 46 96 l 2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" fill="#e3b341"/>
     <path class="spark s3" d="M 128 104 l 2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 z" fill="#e3b341"/>
-    <text class="t1" x="172" y="70" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#e6edf3">1st Place — National Business Plan Competition</text>
+    <text class="t1" x="172" y="70" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#e6edf3">1st Place, National Business Plan Competition</text>
     <text class="t2" x="172" y="110" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#8b949e">Youth Economics Science Competition (YES-C) 2026 · Universitas Negeri Padang</text>
     <g class="badge">
       <rect x="1260" y="52" width="200" height="46" rx="23" fill="none" stroke="#e3b341" stroke-width="1.5"/>

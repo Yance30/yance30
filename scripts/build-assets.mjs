@@ -326,7 +326,7 @@ const projects = [
 ];
 
 const achievement = {
-  title: '1st Place — National Business Plan Competition',
+  title: '1st Place, National Business Plan Competition',
   subtitle: 'Youth Economics Science Competition (YES-C) 2026 · Universitas Negeri Padang',
   badge: 'NATIONAL · 2026',
 };
