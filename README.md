@@ -18,27 +18,58 @@
 
 ## About
 
-Information Systems student at the Faculty of Computer Science, Universitas Brawijaya, focused on business intelligence and web development. I build analytics dashboards and web applications that turn business questions into clear, usable tools.
+Information Systems student at the Faculty of Computer Science, Universitas Brawijaya, focused on business intelligence and web development. I build analytics dashboards and web applications that turn business questions into clear, usable tools — and I'm open to internships and collaboration in BI, data analytics, and web development.
 
-- 🏆 **1st place, National Business Plan Competition**, Youth Economics Science Competition (YES-C) 2026
-- 🔭 Building data-driven products across web, analytics, and mobile
-- 🤝 Open to internships and collaboration in BI, data analytics, and web development
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/achievement-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/cards/achievement-light.svg" />
+  <img src="assets/cards/achievement-dark.svg" width="100%" alt="1st Place, National Business Plan Competition — Youth Economics Science Competition (YES-C) 2026, Universitas Negeri Padang" />
+</picture>
 
 ## Featured Projects
 
-| Project | What it does | Stack |
-|---|---|---|
-| **[FoodSave](https://github.com/Yance30/foodsave)** · [demo](https://foodsave.infinityfree.me) | Platform that routes surplus food from shops, caterers, and canteens in Malang to recipients before it is wasted, and tracks food saved and CO₂e avoided. Three roles, provider verification, maps, and automated tests. | Laravel 12 · PHP · Tailwind CSS · Alpine.js |
-| **[JALA Fraud Analytics](https://github.com/Yance30/Jala)** · [demo](https://jala-fraud.streamlit.app/) | Prototype for BPJS Kesehatan Healthkathon 2026. Prioritizes health-insurance claims for audit using graph features across facilities, doctors, and patients. On 17,431 synthetic claims at a fixed audit capacity, it caught 436 fraudulent claims vs. 91 for a rule-based baseline. | Python · Streamlit · NetworkX · scikit-learn |
-| **[Kedai Rakdjat POS](https://portyance.vercel.app/)** · *private repo* | Local-first point-of-sale for a food stall: keeps taking orders offline on a tablet and syncs to the cloud when back online. Includes an owner revenue dashboard, kitchen display, QRIS payments, and Bluetooth receipt printing. | React · TypeScript · Tailwind CSS · Supabase · Dexie |
-| **[Tandur](https://github.com/Yance30/Tandur)** · [demo](https://tandur-psi.vercel.app/) | Web prototype that digitizes the *akad salam* (Islamic forward-sale) workflow for Islamic cooperatives. | JavaScript · HTML · CSS |
+<p align="center">
+  <a href="https://github.com/Yance30/foodsave"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/foodsave-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/foodsave-light.svg" />
+    <img src="assets/cards/foodsave-dark.svg" width="49%" alt="FoodSave — routes surplus food from shops and canteens in Malang to people nearby and tracks CO₂e saved. Laravel 12, PHP, Tailwind CSS, Alpine.js." />
+  </picture></a>
+  <a href="https://github.com/Yance30/Jala"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/jala-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/jala-light.svg" />
+    <img src="assets/cards/jala-dark.svg" width="49%" alt="JALA Fraud Analytics — graph-based audit prioritization for BPJS Kesehatan Healthkathon 2026; caught 436 vs. 91 fraud cases against a rule baseline on synthetic claims. Python, Streamlit, NetworkX, scikit-learn." />
+  </picture></a>
+  <a href="https://portyance.vercel.app/"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/kedai-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/kedai-light.svg" />
+    <img src="assets/cards/kedai-dark.svg" width="49%" alt="Kedai Rakdjat POS — local-first point of sale that keeps selling offline and syncs on reconnect, with kitchen display and QRIS. React, TypeScript, Supabase, Dexie." />
+  </picture></a>
+  <a href="https://github.com/Yance30/Tandur"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/tandur-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/tandur-light.svg" />
+    <img src="assets/cards/tandur-dark.svg" width="49%" alt="Tandur — digitizes akad salam financing for Islamic cooperatives with stress-tested contracts and an audit trail. JavaScript, HTML, CSS." />
+  </picture></a>
+</p>
+
+<p align="center">
+  <sub>Live demos: <a href="https://foodsave.infinityfree.me">FoodSave</a> · <a href="https://jala-fraud.streamlit.app/">JALA</a> · <a href="https://tandur-psi.vercel.app/">Tandur</a> &nbsp;|&nbsp; Kedai Rakdjat POS is a private repository — details on my <a href="https://portyance.vercel.app/">portfolio</a>.</sub>
+</p>
 
 ## Tech Stack
 
-- **Data & BI:** Python, Pandas, scikit-learn, NetworkX, Streamlit, Plotly, SQL, MySQL
-- **Web:** Laravel, PHP, React, TypeScript, JavaScript, Tailwind CSS, Supabase
-- **Mobile:** Kotlin, Jetpack Compose
-- **Tools:** Git, GitHub Actions, Figma, Vercel
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/cards/stack-light.svg" />
+  <img src="assets/cards/stack-dark.svg" width="100%" alt="Data and BI: Python, Pandas, scikit-learn, NetworkX, Streamlit, Plotly, SQL, MySQL. Mobile: Kotlin, Jetpack Compose. Web: Laravel, PHP, React, TypeScript, JavaScript, Tailwind CSS, Supabase. Tools: Git, GitHub Actions, Figma, Vercel." />
+</picture>
+
+## GitHub Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/contrib-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/contrib-light.svg" />
+  <img src="profile-3d-contrib/contrib-dark.svg" width="100%" alt="3D contribution calendar with commit, pull request, and language statistics" />
+</picture>
 
 ---
 
