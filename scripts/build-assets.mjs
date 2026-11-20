@@ -336,10 +336,130 @@ const stack = [
   { dot: 0.55, items: ['Laravel', 'PHP', 'React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Supabase', 'Vite', 'Hono', 'Git', 'GitHub Actions', 'Figma', 'Vercel'] },
 ];
 
+// ---------- numbers (odometer count-up) ----------
+function numbersCard(stats, t) {
+  const W = 1500, H = 180, LH = 76, colW = W / stats.length;
+  const cols = stats.map((s, i) => {
+    const cx = colW * i + colW / 2;
+    const digits = Array.from({ length: s.value + 1 }, (_, d) =>
+      `<text x="0" y="${d * LH}" text-anchor="end" font-family="${SANS}" font-size="68" font-weight="700" fill="${s.gold ? t.gold : t.accent}">${d}</text>`).join('');
+    const end = s.value * LH;
+    const sep = i ? `<line x1="${colW * i}" y1="44" x2="${colW * i}" y2="136" stroke="${t.border}" stroke-width="2"/>` : '';
+    return {
+      css: `.odo${i} { transform: translateY(-${end}px); animation: roll${i} 1.6s cubic-bezier(.15,.8,.2,1) ${0.3 + i * 0.2}s both; }
+            @keyframes roll${i} { from { transform: translateY(0); } to { transform: translateY(-${end}px); } }`,
+      svg: `${sep}
+      <g transform="translate(${cx + (s.suffix ? 4 : 18)} 96)">
+        <g clip-path="url(#digit)"><g class="odo${i}">${digits}</g></g>
+      </g>
+      ${s.suffix ? `<text class="lbl" x="${cx + 6}" y="96" font-family="${SANS}" font-size="34" font-weight="700" fill="${s.gold ? t.gold : t.accent}">${esc(s.suffix)}</text>` : ''}
+      <text class="lbl" x="${cx}" y="142" text-anchor="middle" font-family="${SANS}" font-size="24" fill="${t.text}">${esc(s.label)}</text>`,
+    };
+  });
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <style>
+    .card { animation: fadeUp .7s ease-out both; }
+    .lbl  { animation: fadeIn .8s ease-out .6s both; }
+    ${cols.map((c) => c.css).join('\n')}
+    ${baseKeyframes}
+    ${REDUCED}
+  </style>
+  <defs>${gridDefs(t)}
+    <clipPath id="digit"><rect x="-80" y="-62" width="160" height="${LH}"/></clipPath>
+    <clipPath id="clip"><rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="16"/></clipPath>
+  </defs>
+  <g class="card">
+    <g clip-path="url(#clip)">
+      <rect width="${W}" height="${H}" fill="${t.bg}"/>
+      <rect width="${W}" height="${H}" fill="url(#grid)"/>
+    </g>
+    <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="16" fill="none" stroke="${t.border}" stroke-width="2"/>
+    ${cols.map((c) => c.svg).join('\n')}
+  </g>
+</svg>
+`;
+}
+
+// ---------- journey timeline ----------
+function timelineCard(items, t) {
+  const W = 1500, H = 340, LY = 170, x0 = 175, step = (W - 2 * x0) / (items.length - 1);
+  const nodes = items.map((it, i) => {
+    const x = x0 + i * step;
+    const up = i % 2 === 0;
+    const color = it.gold ? t.gold : t.accent;
+    const d = (0.5 + i * 0.28).toFixed(2);
+    const [yY, yT, yS] = up ? [58, 92, 122] : [232, 266, 296];
+    const tick = up ? `M ${x} ${LY - 14} V ${LY - 34}` : `M ${x} ${LY + 14} V ${LY + 34}`;
+    const ring = it.gold || it.now
+      ? `<circle class="ring" style="animation-delay:${(+d + 0.6).toFixed(2)}s" cx="${x}" cy="${LY}" r="9" fill="none" stroke="${color}" stroke-width="2.5"/>` : '';
+    return `
+    <g class="item" style="animation-delay:${d}s">
+      <path d="${tick}" stroke="${color}" stroke-opacity=".5" stroke-width="2"/>
+      <text x="${x}" y="${yY}" text-anchor="middle" font-family="${MONO}" font-size="19" fill="${color}">${esc(it.when)}</text>
+      <text x="${x}" y="${yT}" text-anchor="middle" font-family="${SANS}" font-size="25" font-weight="700" fill="${t.title}">${esc(it.title)}</text>
+      <text x="${x}" y="${yS}" text-anchor="middle" font-family="${SANS}" font-size="20" fill="${t.text}">${esc(it.sub)}</text>
+    </g>
+    ${ring}
+    <circle class="node" style="animation-delay:${d}s" cx="${x}" cy="${LY}" r="${it.gold || it.now ? 10 : 8}" fill="${it.now ? t.bg : color}" stroke="${color}" stroke-width="3"/>`;
+  }).join('');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <style>
+    .card  { animation: fadeUp .7s ease-out both; }
+    .track { transform-box: fill-box; transform-origin: left center; animation: grow 1.8s cubic-bezier(.3,.6,.2,1) .2s both; }
+    .item  { animation: fadeUp .6s ease-out both; }
+    .node  { transform-box: fill-box; transform-origin: center; animation: pop .45s cubic-bezier(.2,1.5,.4,1) both; }
+    .ring  { transform-box: fill-box; transform-origin: center; opacity: 0; animation: ping 2.4s ease-out infinite; }
+    .comet { animation: travel 6s ease-in-out 2.4s infinite; opacity: 0; }
+    @keyframes ping { 0% { transform: scale(1); opacity: .8; } 80%, 100% { transform: scale(2.8); opacity: 0; } }
+    @keyframes travel { 0% { transform: translateX(0); opacity: 0; } 8% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateX(${W - 2 * x0}px); opacity: 0; } }
+    ${baseKeyframes}
+    ${REDUCED}
+  </style>
+  <defs>${gridDefs(t)}
+    <linearGradient id="track" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.accent2}" stop-opacity=".35"/>
+      <stop offset="70%" stop-color="${t.accent}"/>
+      <stop offset="100%" stop-color="${t.accent}"/>
+    </linearGradient>
+    <radialGradient id="comet"><stop offset="0%" stop-color="${t.accent}"/><stop offset="100%" stop-color="${t.accent}" stop-opacity="0"/></radialGradient>
+    <clipPath id="clip"><rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="16"/></clipPath>
+  </defs>
+  <g class="card">
+    <g clip-path="url(#clip)">
+      <rect width="${W}" height="${H}" fill="${t.bg}"/>
+      <rect width="${W}" height="${H}" fill="url(#grid)"/>
+    </g>
+    <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="16" fill="none" stroke="${t.border}" stroke-width="2"/>
+    <rect class="track" x="${x0}" y="${LY - 2}" width="${W - 2 * x0}" height="4" rx="2" fill="url(#track)"/>
+    <circle class="comet" cx="${x0}" cy="${LY}" r="14" fill="url(#comet)"/>
+    ${nodes}
+  </g>
+</svg>
+`;
+}
+
+const numbers = [
+  { value: 6, label: 'apps shipped & live' },
+  { value: 3, label: 'hackathons & competitions' },
+  { value: 1, suffix: 'st', label: 'place, national business plan', gold: true },
+  { value: 5, label: 'student organization roles' },
+];
+
+const journey = [
+  { when: '2025', title: 'KBMDSI', sub: '3 organization roles' },
+  { when: '2026', title: 'BPJS Healthkathon', sub: 'built JALA' },
+  { when: '2026', title: 'Web In Action MIA', sub: 'CivicPulse · team' },
+  { when: 'NOV 2026', title: '1st Place YES-C', sub: 'national business plan', gold: true },
+  { when: '2026', title: 'Shipped 2 products', sub: 'Kedai Rakdjat · FoodSave' },
+  { when: 'NOW', title: 'Open to internships', sub: 'BI · data · web', now: true },
+];
+
 mkdirSync(new URL('cards/', OUT), { recursive: true });
 for (const [name, t] of Object.entries(themes)) {
   for (const p of projects) writeFileSync(new URL(`cards/${p.file}-${name}.svg`, OUT), projectCard(p, t));
   writeFileSync(new URL(`cards/achievement-${name}.svg`, OUT), achievementCard(achievement, t));
   writeFileSync(new URL(`cards/stack-${name}.svg`, OUT), stackMarquee(stack, t));
+  writeFileSync(new URL(`cards/numbers-${name}.svg`, OUT), numbersCard(numbers, t));
+  writeFileSync(new URL(`cards/journey-${name}.svg`, OUT), timelineCard(journey, t));
 }
 console.log('assets generated');

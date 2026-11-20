@@ -73,12 +73,18 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
   <img src="assets/cards/stack-dark.svg" width="100%" alt="Data and BI: Python, Pandas, scikit-learn, NetworkX, Streamlit, Plotly, SQL, MySQL. Mobile: Kotlin, Jetpack Compose. Web: Laravel, PHP, React, TypeScript, JavaScript, Tailwind CSS, Supabase. Tools: Git, GitHub Actions, Figma, Vercel." />
 </picture>
 
-## GitHub Activity
+## Journey
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/contrib-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/contrib-light.svg" />
-  <img src="profile-3d-contrib/contrib-dark.svg" width="100%" alt="3D contribution calendar with commit, pull request, and language statistics" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/numbers-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/cards/numbers-light.svg" />
+  <img src="assets/cards/numbers-dark.svg" width="100%" alt="6 apps shipped and live · 3 hackathons and competitions · 1st place, national business plan · 5 student organization roles" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/journey-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/cards/journey-light.svg" />
+  <img src="assets/cards/journey-dark.svg" width="100%" alt="Timeline: 2025, three organization roles at KBMDSI. 2026, built JALA for BPJS Healthkathon. 2026, CivicPulse with a team for Web In Action MIA. November 2026, 1st place at YES-C national business plan competition. 2026, shipped Kedai Rakdjat POS and FoodSave. Now, open to internships in BI, data, and web." />
 </picture>
 
 ---

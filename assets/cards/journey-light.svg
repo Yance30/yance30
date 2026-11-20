@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="340" viewBox="0 0 1500 340">
+  <style>
+    .card  { animation: fadeUp .7s ease-out both; }
+    .track { transform-box: fill-box; transform-origin: left center; animation: grow 1.8s cubic-bezier(.3,.6,.2,1) .2s both; }
+    .item  { animation: fadeUp .6s ease-out both; }
+    .node  { transform-box: fill-box; transform-origin: center; animation: pop .45s cubic-bezier(.2,1.5,.4,1) both; }
+    .ring  { transform-box: fill-box; transform-origin: center; opacity: 0; animation: ping 2.4s ease-out infinite; }
+    .comet { animation: travel 6s ease-in-out 2.4s infinite; opacity: 0; }
+    @keyframes ping { 0% { transform: scale(1); opacity: .8; } 80%, 100% { transform: scale(2.8); opacity: 0; } }
+    @keyframes travel { 0% { transform: translateX(0); opacity: 0; } 8% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateX(1150px); opacity: 0; } }
+    
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes grow   { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes pop    { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+  @keyframes sweep  { 0% { transform: translateX(-400px); } 55%, 100% { transform: translateX(var(--sweep-end)); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f3f6" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="track" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0969da" stop-opacity=".35"/>
+      <stop offset="70%" stop-color="#0969da"/>
+      <stop offset="100%" stop-color="#0969da"/>
+    </linearGradient>
+    <radialGradient id="comet"><stop offset="0%" stop-color="#0969da"/><stop offset="100%" stop-color="#0969da" stop-opacity="0"/></radialGradient>
+    <clipPath id="clip"><rect x="1" y="1" width="1498" height="338" rx="16"/></clipPath>
+  </defs>
+  <g class="card">
+    <g clip-path="url(#clip)">
+      <rect width="1500" height="340" fill="#ffffff"/>
+      <rect width="1500" height="340" fill="url(#grid)"/>
+    </g>
+    <rect x="1" y="1" width="1498" height="338" rx="16" fill="none" stroke="#d1d9e0" stroke-width="2"/>
+    <rect class="track" x="175" y="168" width="1150" height="4" rx="2" fill="url(#track)"/>
+    <circle class="comet" cx="175" cy="170" r="14" fill="url(#comet)"/>
+    
+    <g class="item" style="animation-delay:0.50s">
+      <path d="M 175 156 V 136" stroke="#0969da" stroke-opacity=".5" stroke-width="2"/>
+      <text x="175" y="58" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">2025</text>
+      <text x="175" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">KBMDSI</text>
+      <text x="175" y="122" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">3 organization roles</text>
+    </g>
+    
+    <circle class="node" style="animation-delay:0.50s" cx="175" cy="170" r="8" fill="#0969da" stroke="#0969da" stroke-width="3"/>
+    <g class="item" style="animation-delay:0.78s">
+      <path d="M 405 184 V 204" stroke="#0969da" stroke-opacity=".5" stroke-width="2"/>
+      <text x="405" y="232" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">2026</text>
+      <text x="405" y="266" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">BPJS Healthkathon</text>
+      <text x="405" y="296" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">built JALA</text>
+    </g>
+    
+    <circle class="node" style="animation-delay:0.78s" cx="405" cy="170" r="8" fill="#0969da" stroke="#0969da" stroke-width="3"/>
+    <g class="item" style="animation-delay:1.06s">
+      <path d="M 635 156 V 136" stroke="#0969da" stroke-opacity=".5" stroke-width="2"/>
+      <text x="635" y="58" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">2026</text>
+      <text x="635" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">Web In Action MIA</text>
+      <text x="635" y="122" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">CivicPulse · team</text>
+    </g>
+    
+    <circle class="node" style="animation-delay:1.06s" cx="635" cy="170" r="8" fill="#0969da" stroke="#0969da" stroke-width="3"/>
+    <g class="item" style="animation-delay:1.34s">
+      <path d="M 865 184 V 204" stroke="#9a6700" stroke-opacity=".5" stroke-width="2"/>
+      <text x="865" y="232" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#9a6700">NOV 2026</text>
+      <text x="865" y="266" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">1st Place YES-C</text>
+      <text x="865" y="296" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">national business plan</text>
+    </g>
+    <circle class="ring" style="animation-delay:1.94s" cx="865" cy="170" r="9" fill="none" stroke="#9a6700" stroke-width="2.5"/>
+    <circle class="node" style="animation-delay:1.34s" cx="865" cy="170" r="10" fill="#9a6700" stroke="#9a6700" stroke-width="3"/>
+    <g class="item" style="animation-delay:1.62s">
+      <path d="M 1095 156 V 136" stroke="#0969da" stroke-opacity=".5" stroke-width="2"/>
+      <text x="1095" y="58" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">2026</text>
+      <text x="1095" y="92" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">Shipped 2 products</text>
+      <text x="1095" y="122" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">Kedai Rakdjat · FoodSave</text>
+    </g>
+    
+    <circle class="node" style="animation-delay:1.62s" cx="1095" cy="170" r="8" fill="#0969da" stroke="#0969da" stroke-width="3"/>
+    <g class="item" style="animation-delay:1.90s">
+      <path d="M 1325 184 V 204" stroke="#0969da" stroke-opacity=".5" stroke-width="2"/>
+      <text x="1325" y="232" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">NOW</text>
+      <text x="1325" y="266" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">Open to internships</text>
+      <text x="1325" y="296" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">BI · data · web</text>
+    </g>
+    <circle class="ring" style="animation-delay:2.50s" cx="1325" cy="170" r="9" fill="none" stroke="#0969da" stroke-width="2.5"/>
+    <circle class="node" style="animation-delay:1.90s" cx="1325" cy="170" r="10" fill="#ffffff" stroke="#0969da" stroke-width="3"/>
+  </g>
+</svg>
