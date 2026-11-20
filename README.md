@@ -1,65 +1,41 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" />
+  <img src="assets/banner.svg" width="100%" alt="Yance Adhy Nata Panjaitan — building web, data, and mobile solutions" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/Yance30">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;Data+%26+Business+Intelligence;Mobile+Developer" />
-  </a>
+  <strong>Full-Stack Development · Data &amp; Business Intelligence · Mobile Development</strong>
 </p>
 
 <p align="center">
-  <a href="https://portyance.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/Yance30"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  <a href="https://portyance.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
 ---
 
-## About Me
+## About
 
-I am a developer focused on full-stack web development and data analytics. I build business-oriented solutions — from finance workflow tools and food-ordering platforms to interactive BI dashboards with ETL pipelines and predictive models.
+I build digital products that connect software engineering with practical business needs. My work spans full-stack web applications, data analytics and BI dashboards, and mobile development.
 
-- **Web Development** — Laravel, React, and modern frontend tooling
-- **Data & Business Intelligence** — Streamlit dashboards, ETL pipelines, and machine learning
-- **Mobile Development** — native Android with Kotlin and cross-platform with Flutter
-- Portfolio: **[portyance.vercel.app](https://portyance.vercel.app/)**
+## Featured Projects
 
----
+- **[JALA Fraud Analytics](https://github.com/Yance30/Jala)** — Dashboard for prioritizing BPJS health claims using synthetic data and graph-based fraud models.
+  - `Python` · `Streamlit` · `NetworkX`
+- **[Tandur](https://github.com/Yance30/Tandur)** — Web prototype for digitizing Islamic finance workflows (akad salam). [Live demo](https://tandur-psi.vercel.app/)
+  - `JavaScript` · `HTML` · `CSS`
+- **[Business Intelligence Dashboard](https://github.com/Yance30/Big-Data)** — CSV-to-MySQL ETL pipeline, predictive analytics, and interactive visualizations.
+  - `Python` · `Streamlit` · `MySQL`
 
-## Tech Stack
+## Core Technologies
 
-| Category | Technologies |
-|---|---|
-| **Languages** | <img src="https://skillicons.dev/icons?i=python,js,ts,php,kotlin,dart,java,cpp&theme=dark" /> |
-| **Frontend** | <img src="https://skillicons.dev/icons?i=react,tailwind,html,css&theme=dark" /> <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white" /> |
-| **Backend & Database** | <img src="https://skillicons.dev/icons?i=laravel,nodejs,mysql,supabase&theme=dark" /> |
-| **Mobile** | <img src="https://skillicons.dev/icons?i=flutter&theme=dark" /> <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" /> <img src="https://img.shields.io/badge/osmdroid-3DDC84?style=flat-square&logo=android&logoColor=white" /> |
-| **Data & BI** | <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" /> <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" /> <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" /> |
-| **Tools** | <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,vercel&theme=dark" /> |
-
----
-
-## GitHub Stats
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Yance30&theme=github-dark-blue&hide_border=true" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Yance30/yance30/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Yance30/yance30/output/github-snake.svg" />
-    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/Yance30/yance30/output/github-snake.svg" />
-  </picture>
-</p>
+- **Web:** Laravel, React, TypeScript, JavaScript, Node.js, MySQL
+- **Data & BI:** Python, Pandas, Streamlit, Plotly, Power BI, SQL
+- **Mobile:** Kotlin, Jetpack Compose, Flutter
+- **Tools:** Git, GitHub, VS Code, Figma, Vercel
 
 ---
 
 <p align="center">
-  <i>Open to collaboration on web development, data analytics, and mobile projects — reach me via <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/">LinkedIn</a>.</i>
-</p>
-
-<p align="center">
-  <img src="assets/footer.svg" width="100%" />
+  Open to collaborating on web, data, and mobile projects.
+  <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/">Get in touch</a>.
 </p>
