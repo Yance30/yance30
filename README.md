@@ -29,12 +29,12 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
 ## Featured Projects
 
 <p align="center">
-  <a href="https://github.com/Yance30/foodsave"><picture>
+  <a href="https://foodsave.infinityfree.me"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/foodsave-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/foodsave-light.svg" />
     <img src="assets/cards/foodsave-dark.svg" width="49%" alt="FoodSave — routes surplus food from shops and canteens in Malang to people nearby and tracks CO₂e saved. Laravel 12, PHP, Tailwind CSS, Alpine.js." />
   </picture></a>
-  <a href="https://github.com/Yance30/Jala"><picture>
+  <a href="https://jala-fraud.streamlit.app/"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/jala-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/jala-light.svg" />
     <img src="assets/cards/jala-dark.svg" width="49%" alt="JALA Fraud Analytics — graph-based audit prioritization for BPJS Kesehatan Healthkathon 2026; caught 436 vs. 91 fraud cases against a rule baseline on synthetic claims. Python, Streamlit, NetworkX, scikit-learn." />
@@ -44,7 +44,7 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/kedai-light.svg" />
     <img src="assets/cards/kedai-dark.svg" width="49%" alt="Kedai Rakdjat POS — local-first point of sale that keeps selling offline and syncs on reconnect, with kitchen display and QRIS. React, TypeScript, Supabase, Dexie." />
   </picture></a>
-  <a href="https://github.com/Yance30/Tandur"><picture>
+  <a href="https://tandur-psi.vercel.app/"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/tandur-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/tandur-light.svg" />
     <img src="assets/cards/tandur-dark.svg" width="49%" alt="Tandur — digitizes akad salam financing for Islamic cooperatives with stress-tested contracts and an audit trail. JavaScript, HTML, CSS." />
@@ -52,7 +52,7 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
 </p>
 
 <p align="center">
-  <sub>Live demos: <a href="https://foodsave.infinityfree.me">FoodSave</a> · <a href="https://jala-fraud.streamlit.app/">JALA</a> · <a href="https://tandur-psi.vercel.app/">Tandur</a> &nbsp;|&nbsp; Kedai Rakdjat POS is a private repository — details on my <a href="https://portyance.vercel.app/">portfolio</a>.</sub>
+  <sub>Cards open the live demos. Source code: <a href="https://github.com/Yance30/foodsave">FoodSave</a> · <a href="https://github.com/Yance30/Jala">JALA</a> · <a href="https://github.com/Yance30/Tandur">Tandur</a> &nbsp;|&nbsp; Kedai Rakdjat POS is a private repository — details on my <a href="https://portyance.vercel.app/">portfolio</a>.</sub>
 </p>
 
 ## Tech Stack
