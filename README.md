@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg" />
-  <img src="assets/banner.svg" width="100%" alt="Yance Adhy Nata Panjaitan, building web, data, and mobile solutions" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg?v=2" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg?v=2" />
+  <img src="assets/banner.svg?v=2" width="100%" alt="Yance Adhy Nata Panjaitan, building web, data, and mobile solutions" />
 </picture>
 
 <p align="center">

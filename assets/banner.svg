@@ -39,6 +39,20 @@
     @keyframes ping   { 0% { transform: scale(1); opacity: .9; } 80%, 100% { transform: scale(3.2); opacity: 0; } }
     @keyframes sweep  { 0% { transform: translateX(-360px); } 60%, 100% { transform: translateX(1560px); } }
 
+    .p  { opacity: 0; }
+    .p1 { animation: p1 8s ease-in-out 1.0s infinite; }
+    .p2 { animation: p2 10s ease-in-out 3.5s infinite; }
+    .p3 { animation: p3 7s ease-in-out 2.0s infinite; }
+    .p4 { animation: p4 9s ease-in-out 5.0s infinite; }
+    .p5 { animation: p5 8s ease-in-out 6.5s infinite; }
+    .p6 { animation: p6 9s ease-in-out 4.2s infinite; }
+    @keyframes p1 { 0% { transform: translateX(0); opacity: 0; } 6% { opacity: 1; } 58% { opacity: 1; } 65%, 100% { transform: translateX(800px); opacity: 0; } }
+    @keyframes p2 { 0% { transform: translateX(0); opacity: 0; } 6% { opacity: 1; } 58% { opacity: 1; } 65%, 100% { transform: translateX(880px); opacity: 0; } }
+    @keyframes p3 { 0% { transform: translateY(0); opacity: 0; } 6% { opacity: 1; } 58% { opacity: 1; } 65%, 100% { transform: translateY(420px); opacity: 0; } }
+    @keyframes p4 { 0% { transform: translateX(0); opacity: 0; } 6% { opacity: 1; } 58% { opacity: 1; } 65%, 100% { transform: translateX(616px); opacity: 0; } }
+    @keyframes p5 { 0% { transform: translateY(0); opacity: 0; } 6% { opacity: 1; } 58% { opacity: 1; } 65%, 100% { transform: translateY(-420px); opacity: 0; } }
+    @keyframes p6 { 0% { transform: translateX(0); opacity: 0; } 6% { opacity: 1; } 58% { opacity: 1; } 65%, 100% { transform: translateX(-880px); opacity: 0; } }
+
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
     }
@@ -61,6 +75,11 @@
       <stop offset="50%" stop-color="#ffffff" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="trailR" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/><stop offset="100%" stop-color="#58a6ff" stop-opacity="0.9"/></linearGradient>
+    <linearGradient id="trailL" x1="100%" y1="0%" x2="0%" y2="0%"><stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/><stop offset="100%" stop-color="#58a6ff" stop-opacity="0.9"/></linearGradient>
+    <linearGradient id="trailD" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/><stop offset="100%" stop-color="#58a6ff" stop-opacity="0.9"/></linearGradient>
+    <linearGradient id="trailU" x1="0%" y1="100%" x2="0%" y2="0%"><stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/><stop offset="100%" stop-color="#58a6ff" stop-opacity="0.9"/></linearGradient>
+    <g id="head"><circle r="7" fill="#58a6ff" fill-opacity="0.22"/><circle r="2.6" fill="#58a6ff"/></g>
     <linearGradient id="area" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
@@ -70,6 +89,14 @@
   <rect width="1500" height="420" fill="#0d1117"/>
   <rect width="1500" height="420" fill="url(#grid)"/>
   <rect class="glow" width="1500" height="420" fill="url(#glow)"/>
+
+  <!-- data particles travelling along grid lines -->
+  <g transform="translate(700 44)"><g class="p p1"><rect x="-80" y="-1" width="80" height="2" fill="url(#trailR)"/><use href="#head"/></g></g>
+  <g transform="translate(20 396)"><g class="p p2"><rect x="-80" y="-1" width="80" height="2" fill="url(#trailR)"/><use href="#head"/></g></g>
+  <g transform="translate(1012 0)"><g class="p p3"><rect x="-1" y="-80" width="2" height="80" fill="url(#trailD)"/><use href="#head"/></g></g>
+  <g transform="translate(880 352)"><g class="p p4"><rect x="-80" y="-1" width="80" height="2" fill="url(#trailR)"/><use href="#head"/></g></g>
+  <g transform="translate(1320 420)"><g class="p p5"><rect x="-1" y="0" width="2" height="80" fill="url(#trailU)"/><use href="#head"/></g></g>
+  <g transform="translate(1480 88)"><g class="p p6"><rect x="0" y="-1" width="80" height="2" fill="url(#trailL)"/><use href="#head"/></g></g>
 
   <!-- data sparkline -->
   <path class="area" d="M 860 330 L 940 300 L 1010 312 L 1080 262 L 1150 276 L 1220 222 L 1290 236 L 1360 180 L 1430 150 L 1430 400 L 860 400 Z" fill="url(#area)"/>
