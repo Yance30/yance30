@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="90" viewBox="0 0 1500 90">
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#eaeef2" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#0969da"/>
+    </linearGradient>
+  </defs>
+  <rect width="1500" height="90" fill="#ffffff"/>
+  <rect width="1500" height="90" fill="url(#grid)"/>
+  <rect x="0" y="0" width="1500" height="6" fill="url(#line)"/>
+  <text x="750" y="58" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="22" fill="#59636e">git commit -m "keep building"</text>
+</svg>

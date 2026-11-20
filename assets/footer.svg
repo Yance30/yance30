@@ -12,5 +12,5 @@
   <rect width="1500" height="90" fill="#0d1117"/>
   <rect width="1500" height="90" fill="url(#grid)"/>
   <rect x="0" y="0" width="1500" height="6" fill="url(#line)"/>
-  <text x="750" y="58" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="22" fill="#8b949e">git commit -m "keep building"</text>
+  <text x="750" y="58" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="22" fill="#8b949e">git commit -m "keep building"</text>
 </svg>

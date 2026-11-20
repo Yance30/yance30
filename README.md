@@ -1,6 +1,8 @@
-<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg" />
   <img src="assets/banner.svg" width="100%" alt="Yance Adhy Nata Panjaitan — building web, data, and mobile solutions" />
-</p>
+</picture>
 
 <p align="center">
   <strong>Full-Stack Development · Data &amp; Business Intelligence · Mobile Development</strong>
@@ -39,3 +41,9 @@ I build digital products that connect software engineering with practical busine
   Open to collaborating on web, data, and mobile projects.
   <a href="https://www.linkedin.com/in/yanceadhynatapanjaitan/">Get in touch</a>.
 </p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" />
+  <img src="assets/footer.svg" width="100%" alt="" />
+</picture>
