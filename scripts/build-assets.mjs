@@ -45,20 +45,20 @@ const motifs = {
       `<circle class="node" style="animation-delay:${i * 0.5}s" cx="${x}" cy="${y}" r="${i === 2 ? 7 : 5}" fill="${i === 2 ? t.accent : t.bg}" stroke="${t.accent}" stroke-width="2"/>`).join('');
     return {
       css: `.edge { stroke-dasharray: 1; animation: draw 1s ease-out both; }
-            .node { transform-box: fill-box; transform-origin: center; animation: breathe 2.5s ease-in-out infinite; }
-            .ring { transform-box: fill-box; transform-origin: center; animation: ping 2.5s ease-out 1.5s infinite; }
+            .node { transform-box: fill-box; transform-origin: center; animation: breathe 4s ease-in-out infinite; }
+            .ring { transform-box: fill-box; transform-origin: center; animation: ping 4s ease-out 1.5s infinite; }
             @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
-            @keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.25); } }
-            @keyframes ping { 0% { transform: scale(1); opacity: .8; } 80%, 100% { transform: scale(3); opacity: 0; } }`,
+            @keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+            @keyframes ping { 0% { transform: scale(1); opacity: .8; } 50%, 100% { transform: scale(3); opacity: 0; } }`,
       svg: `${lines}<circle class="ring" cx="744" cy="84" r="7" fill="none" stroke="${t.accent}" stroke-width="2"/>${dots}`,
     };
   },
   pin: (t) => ({
-    css: `.pin { animation: bob 2.4s ease-in-out infinite; }
-          .ripple { transform-box: fill-box; transform-origin: center; animation: ripple 2.4s ease-out infinite; }
-          .ripple2 { animation-delay: 1.2s; }
-          @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-          @keyframes ripple { 0% { transform: scale(.3); opacity: .9; } 100% { transform: scale(1.6); opacity: 0; } }`,
+    css: `.pin { animation: bob 4s ease-in-out infinite; }
+          .ripple { transform-box: fill-box; transform-origin: center; animation: ripple 4s ease-out infinite; }
+          .ripple2 { animation-delay: .5s; }
+          @keyframes bob { 0%, 45%, 100% { transform: translateY(0); } 22% { transform: translateY(-8px); } }
+          @keyframes ripple { 0% { transform: scale(.3); opacity: .9; } 45%, 100% { transform: scale(1.6); opacity: 0; } }`,
     svg: `
       <ellipse class="ripple" cx="700" cy="132" rx="30" ry="9" fill="none" stroke="${t.accent}" stroke-width="2"/>
       <ellipse class="ripple ripple2" cx="700" cy="132" rx="30" ry="9" fill="none" stroke="${t.accent}" stroke-width="2"/>
@@ -68,9 +68,9 @@ const motifs = {
       </g>`,
   }),
   sync: (t) => ({
-    css: `.spin { transform-box: view-box; transform-origin: 700px 88px; animation: spin 3.2s cubic-bezier(.6,0,.4,1) infinite; }
-          .status { animation: status 6.4s steps(1) infinite; }
-          @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    css: `.spin { transform-box: view-box; transform-origin: 700px 88px; animation: spin 5s cubic-bezier(.6,0,.4,1) infinite; }
+          .status { animation: status 10s steps(1) infinite; }
+          @keyframes spin { 0% { transform: rotate(0deg); } 35%, 100% { transform: rotate(360deg); } }
           @keyframes status { 0%, 50% { fill: ${t.muted}; } 50.01%, 100% { fill: ${t.accent}; } }`,
     svg: `
       <g class="spin" fill="none" stroke="${t.accent}" stroke-width="5" stroke-linecap="round">
@@ -82,11 +82,11 @@ const motifs = {
       <circle class="status" cx="752" cy="132" r="6" fill="${t.accent}"/>`,
   }),
   pulse: (t) => ({
-    css: `.ecg { stroke-dasharray: 60 240; animation: trace 2.4s linear infinite; }
+    css: `.ecg { stroke-dasharray: 60 240; animation: trace 4.5s ease-in-out infinite; }
           .ecg-base { stroke-opacity: .25; }
-          .beacon { transform-box: fill-box; transform-origin: center; animation: ping 2.4s ease-out infinite; }
-          @keyframes trace { from { stroke-dashoffset: 300; } to { stroke-dashoffset: 0; } }
-          @keyframes ping { 0% { transform: scale(1); opacity: .8; } 80%, 100% { transform: scale(2.6); opacity: 0; } }`,
+          .beacon { transform-box: fill-box; transform-origin: center; animation: ping 4.5s ease-out 2.2s infinite; }
+          @keyframes trace { 0% { stroke-dashoffset: 300; opacity: 0; } 5% { opacity: 1; } 50% { stroke-dashoffset: 60; opacity: 1; } 60%, 100% { stroke-dashoffset: 60; opacity: 0; } }
+          @keyframes ping { 0% { transform: scale(1); opacity: .8; } 45%, 100% { transform: scale(2.6); opacity: 0; } }`,
     svg: `
       <path class="ecg-base" d="M 630 100 H 668 L 680 76 L 694 128 L 708 58 L 720 112 L 730 100 H 768" fill="none" stroke="${t.accent}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
       <path class="ecg" d="M 630 100 H 668 L 680 76 L 694 128 L 708 58 L 720 112 L 730 100 H 768" pathLength="300" fill="none" stroke="${t.accent}" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
@@ -98,7 +98,7 @@ const motifs = {
     const lines = rows.map(([x, y, w], i) =>
       `<rect class="sk" style="animation-delay:${i * 0.25}s" x="${x}" y="${y}" width="${w}" height="7" rx="3.5" fill="${t.accent}"/>`).join('');
     return {
-      css: `.sk { animation: shimmer 2.4s ease-in-out infinite; }
+      css: `.sk { animation: shimmer 3.6s ease-in-out infinite; }
             .caret { animation: blinkc 1.1s steps(1) infinite; }
             @keyframes shimmer { 0%, 100% { fill-opacity: .25; } 50% { fill-opacity: .8; } }
             @keyframes blinkc { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }`,
@@ -117,8 +117,8 @@ const motifs = {
     const bars = hs.map((h, i) =>
       `<rect class="bar" style="animation-delay:${i * 0.18}s" x="${650 + i * 22}" y="${140 - h}" width="14" height="${h}" rx="3" fill="${t.accent}" fill-opacity="${0.45 + i * 0.12}"/>`).join('');
     return {
-      css: `.bar { transform-box: fill-box; transform-origin: bottom; animation: rise 4s cubic-bezier(.2,.7,.2,1) infinite; }
-            @keyframes rise { 0% { transform: scaleY(.15); } 25%, 80% { transform: scaleY(1); } 100% { transform: scaleY(.15); } }`,
+      css: `.bar { transform-box: fill-box; transform-origin: bottom; animation: rise 6s cubic-bezier(.2,.7,.2,1) infinite; }
+            @keyframes rise { 0% { transform: scaleY(.15); } 18%, 85% { transform: scaleY(1); } 100% { transform: scaleY(.15); } }`,
       svg: `<line x1="642" y1="141" x2="766" y2="141" stroke="${t.border}" stroke-width="2"/>${bars}`,
     };
   },
@@ -137,19 +137,21 @@ function chips(items, t, x0, y, delay0) {
   }).join('');
 }
 
-function projectCard(p, t) {
+function projectCard(p, t, i = 0) {
+  const o = i * 0.18; // cascade offset per card
+  const d = (x) => `${(o + x).toFixed(2)}s`;
   const m = motifs[p.motif](t);
   const desc = p.lines.map((l, i) =>
     `<text x="40" y="${200 + i * 36}" font-family="${SANS}" font-size="25" fill="${t.text}">${esc(l)}</text>`).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
   <style>
-    .card   { animation: fadeUp .7s ease-out both; }
-    .tag    { animation: fadeIn .6s ease-out .2s both; }
-    .title  { animation: fadeUp .7s ease-out .25s both; }
-    .accent { transform-box: fill-box; transform-origin: left center; animation: grow .8s cubic-bezier(.2,.7,.2,1) .5s both; }
-    .desc   { animation: fadeIn .8s ease-out .6s both; }
+    .card   { animation: fadeUp .7s ease-out ${d(0)} both; }
+    .tag    { animation: fadeIn .6s ease-out ${d(.2)} both; }
+    .title  { animation: fadeUp .7s ease-out ${d(.25)} both; }
+    .accent { transform-box: fill-box; transform-origin: left center; animation: grow .8s cubic-bezier(.2,.7,.2,1) ${d(.5)} both; }
+    .desc   { animation: fadeIn .8s ease-out ${d(.6)} both; }
     .chip   { transform-box: fill-box; transform-origin: center; animation: pop .45s ease-out both; }
-    .shine  { --sweep-end: 1200px; animation: sweep 6s ease-in-out 1.5s infinite; }
+    .shine  { --sweep-end: 1200px; animation: sweep 8s ease-in-out ${(o + 1.5).toFixed(2)}s infinite; }
     ${m.css}
     ${baseKeyframes}
     ${REDUCED}
@@ -181,7 +183,7 @@ function projectCard(p, t) {
     <text class="title" x="40" y="118" font-family="${SANS}" font-size="44" font-weight="700" fill="${t.title}">${esc(p.title)}</text>
     <rect class="accent" x="40" y="138" width="120" height="3" rx="1.5" fill="url(#line)"/>
     <g class="desc">${desc}</g>
-    ${chips(p.stack, t, 40, 272, 0.9)}
+    ${chips(p.stack, t, 40, 272, o + 0.9)}
     ${m.svg}
   </g>
 </svg>
@@ -233,6 +235,46 @@ function stackMarquee(rows, t) {
 </svg>
 `;
 }
+
+// ---------- section headers ----------
+function sectionHeader(label, t) {
+  const W = 1000, H = 76;
+  const titleW = Math.round(label.length * 17.5);
+  const lineX = 70 + titleW + 24;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <style>
+    .path  { animation: fadeIn .5s ease-out both; }
+    .title { animation: fadeUp .6s ease-out .15s both; }
+    .under { transform-box: fill-box; transform-origin: left center; animation: grow .7s cubic-bezier(.2,.7,.2,1) .45s both; }
+    .rule  { transform-box: fill-box; transform-origin: left center; animation: grow 1.4s cubic-bezier(.3,.6,.2,1) .7s both; }
+    .caret { animation: blink 1.1s steps(1) 1.2s infinite; }
+    @keyframes blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+    ${baseKeyframes}
+    ${REDUCED}
+  </style>
+  <defs>
+    <linearGradient id="rule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.border}"/><stop offset="100%" stop-color="${t.border}" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="under" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${t.accent}"/><stop offset="100%" stop-color="${t.accent2}" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <text class="path" x="0" y="46" font-family="${MONO}" font-size="26" fill="${t.accent}">~/</text>
+  <text class="title" x="40" y="46" font-family="${SANS}" font-size="32" font-weight="700" fill="${t.title}">${esc(label)}</text>
+  <rect class="caret" x="${40 + titleW + 6}" y="22" width="3" height="30" fill="${t.accent}"/>
+  <rect class="under" x="42" y="60" width="72" height="3" rx="1.5" fill="url(#under)"/>
+  <rect class="rule" x="${lineX}" y="37" width="${W - lineX}" height="1.5" fill="url(#rule)"/>
+</svg>
+`;
+}
+
+const sections = [
+  { file: 'about', label: 'About' },
+  { file: 'projects', label: 'Featured Projects' },
+  { file: 'stack', label: 'Tech Stack' },
+  { file: 'journey', label: 'Journey' },
+];
 
 // ---------- content ----------
 const projects = [
@@ -392,10 +434,12 @@ const journey = [
 ];
 
 mkdirSync(new URL('cards/', OUT), { recursive: true });
+mkdirSync(new URL('headers/', OUT), { recursive: true });
 for (const [name, t] of Object.entries(themes)) {
-  for (const p of projects) writeFileSync(new URL(`cards/${p.file}-${name}.svg`, OUT), projectCard(p, t));
+  projects.forEach((p, i) => writeFileSync(new URL(`cards/${p.file}-${name}.svg`, OUT), projectCard(p, t, i)));
   writeFileSync(new URL(`cards/stack-${name}.svg`, OUT), stackMarquee(stack, t));
   writeFileSync(new URL(`cards/numbers-${name}.svg`, OUT), numbersCard(numbers, t));
   writeFileSync(new URL(`cards/journey-${name}.svg`, OUT), timelineCard(journey, t));
+  for (const sct of sections) writeFileSync(new URL(`headers/${sct.file}-${name}.svg`, OUT), sectionHeader(sct.label, t));
 }
 console.log('assets generated');
