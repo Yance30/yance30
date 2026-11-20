@@ -39,20 +39,30 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/jala-light.svg" />
     <img src="assets/cards/jala-dark.svg" width="49%" alt="JALA Fraud Analytics — graph-based audit prioritization for BPJS Kesehatan Healthkathon 2026; caught 436 vs. 91 fraud cases against a rule baseline on synthetic claims. Python, Streamlit, NetworkX, scikit-learn." />
   </picture></a>
-  <a href="https://portyance.vercel.app/"><picture>
+  <a href="https://civicpulse.my.id/"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/civicpulse-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/civicpulse-light.svg" />
+    <img src="assets/cards/civicpulse-dark.svg" width="49%" alt="CivicPulse — team project for Web In Action MIA 2026: AI-assisted civic reporting with photo recognition, explainable priority scores, and citizen-verified fixes. React, Hono, Supabase, CLIP." />
+  </picture></a>
+  <a href="https://github.com/Yance30/kedai-rakdjat"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/kedai-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/kedai-light.svg" />
-    <img src="assets/cards/kedai-dark.svg" width="49%" alt="Kedai Rakdjat POS — local-first point of sale that keeps selling offline and syncs on reconnect, with kitchen display and QRIS. React, TypeScript, Supabase, Dexie." />
+    <img src="assets/cards/kedai-dark.svg" width="49%" alt="Kedai Rakdjat POS — local-first installable point of sale that keeps selling offline and syncs on reconnect, with kitchen display and QRIS. React, TypeScript, Supabase, Dexie." />
   </picture></a>
   <a href="https://tandur-psi.vercel.app/"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/tandur-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/tandur-light.svg" />
     <img src="assets/cards/tandur-dark.svg" width="49%" alt="Tandur — digitizes akad salam financing for Islamic cooperatives with stress-tested contracts and an audit trail. JavaScript, HTML, CSS." />
   </picture></a>
+  <a href="https://portyance.vercel.app/"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/portyance-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/portyance-light.svg" />
+    <img src="assets/cards/portyance-dark.svg" width="49%" alt="Portyance — personal portfolio with project case studies, organization experience, and an interactive animated intro. Next.js, React, Vercel." />
+  </picture></a>
 </p>
 
 <p align="center">
-  <sub>Cards open the live demos. Source code: <a href="https://github.com/Yance30/foodsave">FoodSave</a> · <a href="https://github.com/Yance30/Jala">JALA</a> · <a href="https://github.com/Yance30/Tandur">Tandur</a> &nbsp;|&nbsp; Kedai Rakdjat POS is a private repository — details on my <a href="https://portyance.vercel.app/">portfolio</a>.</sub>
+  <sub>Cards open the live apps. Source code: <a href="https://github.com/Yance30/foodsave">FoodSave</a> · <a href="https://github.com/Yance30/Jala">JALA</a> · <a href="https://github.com/PehPulo/civicpulse">CivicPulse</a> (team) · <a href="https://github.com/Yance30/kedai-rakdjat">Kedai Rakdjat</a> · <a href="https://github.com/Yance30/Tandur">Tandur</a></sub>
 </p>
 
 ## Tech Stack

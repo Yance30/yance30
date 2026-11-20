@@ -4,9 +4,9 @@
     .row0 { animation: scrollL0 32.0s linear infinite; }
             @keyframes scrollL0 { from { transform: translateX(0); } to { transform: translateX(-1441px); } }
             @keyframes scrollR0 { from { transform: translateX(-1441px); } to { transform: translateX(0); } }
-.row1 { animation: scrollR1 35.1s linear infinite; }
-            @keyframes scrollL1 { from { transform: translateX(0); } to { transform: translateX(-1578px); } }
-            @keyframes scrollR1 { from { transform: translateX(-1578px); } to { transform: translateX(0); } }
+.row1 { animation: scrollR1 42.8s linear infinite; }
+            @keyframes scrollL1 { from { transform: translateX(0); } to { transform: translateX(-1926px); } }
+            @keyframes scrollR1 { from { transform: translateX(-1926px); } to { transform: translateX(0); } }
     
   @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -156,38 +156,50 @@
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">React</text>
       </g><g transform="translate(348 0)">
+        <rect width="126" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Next.js</text>
+      </g><g transform="translate(486 0)">
         <rect width="158" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">TypeScript</text>
-      </g><g transform="translate(518 0)">
+      </g><g transform="translate(656 0)">
         <rect width="158" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">JavaScript</text>
-      </g><g transform="translate(688 0)">
+      </g><g transform="translate(826 0)">
         <rect width="180" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Tailwind CSS</text>
-      </g><g transform="translate(880 0)">
+      </g><g transform="translate(1018 0)">
         <rect width="136" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Supabase</text>
-      </g><g transform="translate(1028 0)">
+      </g><g transform="translate(1166 0)">
+        <rect width="93" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Vite</text>
+      </g><g transform="translate(1271 0)">
+        <rect width="93" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Hono</text>
+      </g><g transform="translate(1376 0)">
         <rect width="82" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Git</text>
-      </g><g transform="translate(1122 0)">
+      </g><g transform="translate(1470 0)">
         <rect width="201" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">GitHub Actions</text>
-      </g><g transform="translate(1335 0)">
+      </g><g transform="translate(1683 0)">
         <rect width="104" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Figma</text>
-      </g><g transform="translate(1451 0)">
+      </g><g transform="translate(1799 0)">
         <rect width="115" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Vercel</text>
-      </g><g transform="translate(1578 0)"><g transform="translate(0 0)">
+      </g><g transform="translate(1926 0)"><g transform="translate(0 0)">
         <rect width="126" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Laravel</text>
@@ -200,38 +212,50 @@
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">React</text>
       </g><g transform="translate(348 0)">
+        <rect width="126" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Next.js</text>
+      </g><g transform="translate(486 0)">
         <rect width="158" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">TypeScript</text>
-      </g><g transform="translate(518 0)">
+      </g><g transform="translate(656 0)">
         <rect width="158" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">JavaScript</text>
-      </g><g transform="translate(688 0)">
+      </g><g transform="translate(826 0)">
         <rect width="180" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Tailwind CSS</text>
-      </g><g transform="translate(880 0)">
+      </g><g transform="translate(1018 0)">
         <rect width="136" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Supabase</text>
-      </g><g transform="translate(1028 0)">
+      </g><g transform="translate(1166 0)">
+        <rect width="93" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Vite</text>
+      </g><g transform="translate(1271 0)">
+        <rect width="93" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Hono</text>
+      </g><g transform="translate(1376 0)">
         <rect width="82" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Git</text>
-      </g><g transform="translate(1122 0)">
+      </g><g transform="translate(1470 0)">
         <rect width="201" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">GitHub Actions</text>
-      </g><g transform="translate(1335 0)">
+      </g><g transform="translate(1683 0)">
         <rect width="104" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Figma</text>
-      </g><g transform="translate(1451 0)">
+      </g><g transform="translate(1799 0)">
         <rect width="115" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Vercel</text>
-      </g></g><g transform="translate(3156 0)"><g transform="translate(0 0)">
+      </g></g><g transform="translate(3852 0)"><g transform="translate(0 0)">
         <rect width="126" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Laravel</text>
@@ -244,34 +268,46 @@
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">React</text>
       </g><g transform="translate(348 0)">
+        <rect width="126" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Next.js</text>
+      </g><g transform="translate(486 0)">
         <rect width="158" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">TypeScript</text>
-      </g><g transform="translate(518 0)">
+      </g><g transform="translate(656 0)">
         <rect width="158" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">JavaScript</text>
-      </g><g transform="translate(688 0)">
+      </g><g transform="translate(826 0)">
         <rect width="180" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Tailwind CSS</text>
-      </g><g transform="translate(880 0)">
+      </g><g transform="translate(1018 0)">
         <rect width="136" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Supabase</text>
-      </g><g transform="translate(1028 0)">
+      </g><g transform="translate(1166 0)">
+        <rect width="93" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Vite</text>
+      </g><g transform="translate(1271 0)">
+        <rect width="93" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
+        <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
+        <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Hono</text>
+      </g><g transform="translate(1376 0)">
         <rect width="82" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Git</text>
-      </g><g transform="translate(1122 0)">
+      </g><g transform="translate(1470 0)">
         <rect width="201" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">GitHub Actions</text>
-      </g><g transform="translate(1335 0)">
+      </g><g transform="translate(1683 0)">
         <rect width="104" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Figma</text>
-      </g><g transform="translate(1451 0)">
+      </g><g transform="translate(1799 0)">
         <rect width="115" height="46" rx="23" fill="#f6f8fa" stroke="#d1d9e0"/>
         <circle cx="22" cy="23" r="4.5" fill="#0969da" fill-opacity="0.55"/>
         <text x="36" y="29" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="18" fill="#1f2328">Vercel</text>

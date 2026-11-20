@@ -81,6 +81,37 @@ const motifs = {
       </g>
       <circle class="status" cx="752" cy="132" r="6" fill="${t.accent}"/>`,
   }),
+  pulse: (t) => ({
+    css: `.ecg { stroke-dasharray: 60 240; animation: trace 2.4s linear infinite; }
+          .ecg-base { stroke-opacity: .25; }
+          .beacon { transform-box: fill-box; transform-origin: center; animation: ping 2.4s ease-out infinite; }
+          @keyframes trace { from { stroke-dashoffset: 300; } to { stroke-dashoffset: 0; } }
+          @keyframes ping { 0% { transform: scale(1); opacity: .8; } 80%, 100% { transform: scale(2.6); opacity: 0; } }`,
+    svg: `
+      <path class="ecg-base" d="M 630 100 H 668 L 680 76 L 694 128 L 708 58 L 720 112 L 730 100 H 768" fill="none" stroke="${t.accent}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      <path class="ecg" d="M 630 100 H 668 L 680 76 L 694 128 L 708 58 L 720 112 L 730 100 H 768" pathLength="300" fill="none" stroke="${t.accent}" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle class="beacon" cx="768" cy="100" r="6" fill="none" stroke="${t.gold}" stroke-width="2"/>
+      <circle cx="768" cy="100" r="5" fill="${t.gold}"/>`,
+  }),
+  browser: (t) => {
+    const rows = [[652, 86, 90], [652, 102, 64], [652, 118, 78]];
+    const lines = rows.map(([x, y, w], i) =>
+      `<rect class="sk" style="animation-delay:${i * 0.25}s" x="${x}" y="${y}" width="${w}" height="7" rx="3.5" fill="${t.accent}"/>`).join('');
+    return {
+      css: `.sk { animation: shimmer 2.4s ease-in-out infinite; }
+            .caret { animation: blinkc 1.1s steps(1) infinite; }
+            @keyframes shimmer { 0%, 100% { fill-opacity: .25; } 50% { fill-opacity: .8; } }
+            @keyframes blinkc { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }`,
+      svg: `
+      <rect x="636" y="48" width="132" height="94" rx="10" fill="${t.bg}" stroke="${t.accent}" stroke-opacity=".7" stroke-width="2"/>
+      <line x1="636" y1="68" x2="768" y2="68" stroke="${t.accent}" stroke-opacity=".5" stroke-width="2"/>
+      <circle cx="650" cy="58" r="3.5" fill="${t.accent}" fill-opacity=".8"/>
+      <circle cx="662" cy="58" r="3.5" fill="${t.accent}" fill-opacity=".55"/>
+      <circle cx="674" cy="58" r="3.5" fill="${t.accent}" fill-opacity=".3"/>
+      ${lines}
+      <rect class="caret" x="734" y="116" width="3" height="12" fill="${t.accent}"/>`,
+    };
+  },
   bars: (t) => {
     const hs = [26, 42, 34, 58, 76];
     const bars = hs.map((h, i) =>
@@ -273,7 +304,12 @@ const projects = [
     stack: ['Python', 'Streamlit', 'NetworkX', 'scikit-learn'],
   },
   {
-    file: 'kedai', motif: 'sync', tag: '// local-first · offline ready', title: 'Kedai Rakdjat POS',
+    file: 'civicpulse', motif: 'pulse', tag: '// web in action · mia 2026 · team', title: 'CivicPulse',
+    lines: ['AI-assisted civic reporting with photo recognition,', 'explainable priority scores, citizen-verified fixes.'],
+    stack: ['React', 'Hono', 'Supabase', 'CLIP'],
+  },
+  {
+    file: 'kedai', motif: 'sync', tag: '// local-first · installable pwa', title: 'Kedai Rakdjat POS',
     lines: ['Point of sale that keeps selling offline and', 'syncs on reconnect, with kitchen display & QRIS.'],
     stack: ['React', 'TypeScript', 'Supabase', 'Dexie'],
   },
@@ -281,6 +317,11 @@ const projects = [
     file: 'tandur', motif: 'bars', tag: '// islamic finance · live demo', title: 'Tandur',
     lines: ['Digitizes akad salam financing for Islamic', 'co-ops, with stress-tested contracts & audit trail.'],
     stack: ['JavaScript', 'HTML', 'CSS', 'Vercel'],
+  },
+  {
+    file: 'portyance', motif: 'browser', tag: '// personal portfolio · live', title: 'Portyance',
+    lines: ['My portfolio: project case studies, organization', 'experience, and an interactive animated intro.'],
+    stack: ['Next.js', 'React', 'Vercel'],
   },
 ];
 
@@ -292,7 +333,7 @@ const achievement = {
 
 const stack = [
   { dot: 1, items: ['Python', 'Pandas', 'scikit-learn', 'NetworkX', 'Streamlit', 'Plotly', 'SQL', 'MySQL', 'Kotlin', 'Jetpack Compose'] },
-  { dot: 0.55, items: ['Laravel', 'PHP', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Supabase', 'Git', 'GitHub Actions', 'Figma', 'Vercel'] },
+  { dot: 0.55, items: ['Laravel', 'PHP', 'React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Supabase', 'Vite', 'Hono', 'Git', 'GitHub Actions', 'Figma', 'Vercel'] },
 ];
 
 mkdirSync(new URL('cards/', OUT), { recursive: true });
