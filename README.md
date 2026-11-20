@@ -20,11 +20,6 @@
 
 Information Systems student at the Faculty of Computer Science, Universitas Brawijaya, focused on business intelligence and web development. I build analytics dashboards and web applications that turn business questions into clear, usable tools. I'm also open to internships and collaboration in BI, data analytics, and web development.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/achievement-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/cards/achievement-light.svg" />
-  <img src="assets/cards/achievement-dark.svg" width="100%" alt="1st Place, National Business Plan Competition at the Youth Economics Science Competition (YES-C) 2026, Universitas Negeri Padang" />
-</picture>
 
 ## Featured Projects
 
@@ -78,7 +73,7 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/numbers-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/cards/numbers-light.svg" />
-  <img src="assets/cards/numbers-dark.svg" width="100%" alt="6 apps shipped and live · 3 hackathons and competitions · 1st place, national business plan · 5 student organization roles" />
+  <img src="assets/cards/numbers-dark.svg" width="100%" alt="6 apps shipped and live · 3 hackathons and competitions · 2 competition wins · 5 student organization roles" />
 </picture>
 
 <picture>

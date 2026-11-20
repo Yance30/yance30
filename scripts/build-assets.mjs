@@ -188,63 +188,6 @@ function projectCard(p, t) {
 `;
 }
 
-function achievementCard(a, t) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="150" viewBox="0 0 1500 150">
-  <style>
-    .card   { animation: fadeUp .7s ease-out both; }
-    .trophy { transform-box: fill-box; transform-origin: center bottom; animation: pop .6s cubic-bezier(.2,1.4,.4,1) .3s both, tilt 5s ease-in-out 1.2s infinite; }
-    .spark  { transform-box: fill-box; transform-origin: center; animation: twinkle 2.4s ease-in-out infinite; }
-    .s2 { animation-delay: .8s; } .s3 { animation-delay: 1.6s; }
-    .t1 { animation: fadeUp .7s ease-out .4s both; }
-    .t2 { animation: fadeUp .7s ease-out .6s both; }
-    .badge { animation: fadeIn .6s ease-out .9s both; }
-    .shine { --sweep-end: 1900px; animation: sweep 5s ease-in-out 1s infinite; }
-    @keyframes tilt { 0%, 100% { transform: rotate(0deg); } 10% { transform: rotate(-6deg); } 20% { transform: rotate(5deg); } 30% { transform: rotate(0deg); } }
-    @keyframes twinkle { 0%, 100% { opacity: 0; transform: scale(.4); } 50% { opacity: 1; transform: scale(1); } }
-    ${baseKeyframes}
-    ${REDUCED}
-  </style>
-  <defs>${gridDefs(t)}
-    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="${t.goldSoft}" stop-opacity="0"/>
-      <stop offset="50%" stop-color="${t.goldSoft}" stop-opacity=".16"/>
-      <stop offset="100%" stop-color="${t.goldSoft}" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="6%" cy="50%" r="30%">
-      <stop offset="0%" stop-color="${t.goldSoft}" stop-opacity="${t.glow}"/>
-      <stop offset="100%" stop-color="${t.goldSoft}" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="clip"><rect x="1" y="1" width="1498" height="148" rx="16"/></clipPath>
-  </defs>
-  <g class="card">
-    <g clip-path="url(#clip)">
-      <rect width="1500" height="150" fill="${t.bg}"/>
-      <rect width="1500" height="150" fill="url(#grid)"/>
-      <rect width="1500" height="150" fill="url(#glow)"/>
-      <g transform="skewX(-20)"><rect class="shine" x="0" y="0" width="400" height="150" fill="url(#shine)"/></g>
-    </g>
-    <rect x="1" y="1" width="1498" height="148" rx="16" fill="none" stroke="${t.border}" stroke-width="2"/>
-    <g class="trophy" fill="${t.gold}">
-      <path d="M 66 42 H 114 V 66 A 24 24 0 0 1 66 66 Z"/>
-      <path d="M 66 48 H 54 A 12 14 0 0 0 66 74" fill="none" stroke="${t.gold}" stroke-width="5"/>
-      <path d="M 114 48 H 126 A 12 14 0 0 1 114 74" fill="none" stroke="${t.gold}" stroke-width="5"/>
-      <rect x="86" y="88" width="8" height="14"/>
-      <rect x="72" y="102" width="36" height="8" rx="2"/>
-    </g>
-    <path class="spark" d="M 136 36 l 3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="${t.gold}"/>
-    <path class="spark s2" d="M 46 96 l 2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" fill="${t.gold}"/>
-    <path class="spark s3" d="M 128 104 l 2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 z" fill="${t.gold}"/>
-    <text class="t1" x="172" y="70" font-family="${SANS}" font-size="36" font-weight="700" fill="${t.title}">${esc(a.title)}</text>
-    <text class="t2" x="172" y="110" font-family="${SANS}" font-size="24" fill="${t.text}">${esc(a.subtitle)}</text>
-    <g class="badge">
-      <rect x="1260" y="52" width="200" height="46" rx="23" fill="none" stroke="${t.gold}" stroke-width="1.5"/>
-      <text x="1360" y="82" text-anchor="middle" font-family="${MONO}" font-size="19" fill="${t.gold}">${esc(a.badge)}</text>
-    </g>
-  </g>
-</svg>
-`;
-}
-
 function stackMarquee(rows, t) {
   const W = 1000, H = 136;
   const rowSvg = rows.map((row, r) => {
@@ -324,12 +267,6 @@ const projects = [
     stack: ['Next.js', 'React', 'Vercel'],
   },
 ];
-
-const achievement = {
-  title: '1st Place, National Business Plan Competition',
-  subtitle: 'Youth Economics Science Competition (YES-C) 2026 · Universitas Negeri Padang',
-  badge: 'NATIONAL · 2026',
-};
 
 const stack = [
   { dot: 1, items: ['Python', 'Pandas', 'scikit-learn', 'NetworkX', 'Streamlit', 'Plotly', 'SQL', 'MySQL', 'Kotlin', 'Jetpack Compose'] },
@@ -441,7 +378,7 @@ function timelineCard(items, t) {
 const numbers = [
   { value: 6, label: 'apps shipped & live' },
   { value: 3, label: 'hackathons & competitions' },
-  { value: 1, suffix: 'st', label: 'place, national business plan', gold: true },
+  { value: 2, label: 'competition wins', gold: true },
   { value: 5, label: 'student organization roles' },
 ];
 
@@ -457,7 +394,6 @@ const journey = [
 mkdirSync(new URL('cards/', OUT), { recursive: true });
 for (const [name, t] of Object.entries(themes)) {
   for (const p of projects) writeFileSync(new URL(`cards/${p.file}-${name}.svg`, OUT), projectCard(p, t));
-  writeFileSync(new URL(`cards/achievement-${name}.svg`, OUT), achievementCard(achievement, t));
   writeFileSync(new URL(`cards/stack-${name}.svg`, OUT), stackMarquee(stack, t));
   writeFileSync(new URL(`cards/numbers-${name}.svg`, OUT), numbersCard(numbers, t));
   writeFileSync(new URL(`cards/journey-${name}.svg`, OUT), timelineCard(journey, t));
