@@ -45,7 +45,7 @@
       <rect class="shine" x="0" y="0" width="400" height="3" fill="url(#shine)"/>
     </g>
     <rect x="1" y="1" width="798" height="348" rx="16" fill="none" stroke="#d1d9e0" stroke-width="2"/>
-    <text class="tag" x="40" y="60" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">// local-first · installable pwa</text>
+    <text class="tag" x="40" y="60" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#0969da">// local-first pwa · live demo</text>
     <text class="title" x="40" y="118" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#1f2328">Kedai Rakdjat POS</text>
     <rect class="accent" x="40" y="138" width="120" height="3" rx="1.5" fill="url(#line)"/>
     <g class="desc"><text x="40" y="200" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#59636e">Point of sale that keeps selling offline and</text><text x="40" y="236" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#59636e">syncs on reconnect, with kitchen display &amp; QRIS.</text></g>

@@ -44,7 +44,7 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/civicpulse-light.svg" />
     <img src="assets/cards/civicpulse-dark.svg" width="49%" alt="CivicPulse — team project for Web In Action MIA 2026: AI-assisted civic reporting with photo recognition, explainable priority scores, and citizen-verified fixes. React, Hono, Supabase, CLIP." />
   </picture></a>
-  <a href="https://github.com/Yance30/kedai-rakdjat"><picture>
+  <a href="https://yance30.github.io/kedai-rakdjat/"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/cards/kedai-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/kedai-light.svg" />
     <img src="assets/cards/kedai-dark.svg" width="49%" alt="Kedai Rakdjat POS — local-first installable point of sale that keeps selling offline and syncs on reconnect, with kitchen display and QRIS. React, TypeScript, Supabase, Dexie." />

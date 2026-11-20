@@ -309,7 +309,7 @@ const projects = [
     stack: ['React', 'Hono', 'Supabase', 'CLIP'],
   },
   {
-    file: 'kedai', motif: 'sync', tag: '// local-first · installable pwa', title: 'Kedai Rakdjat POS',
+    file: 'kedai', motif: 'sync', tag: '// local-first pwa · live demo', title: 'Kedai Rakdjat POS',
     lines: ['Point of sale that keeps selling offline and', 'syncs on reconnect, with kitchen display & QRIS.'],
     stack: ['React', 'TypeScript', 'Supabase', 'Dexie'],
   },
