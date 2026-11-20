@@ -28,15 +28,15 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[JALA Fraud Analytics](https://github.com/Yance30/Jala)** · [demo](https://jala-fraud.streamlit.app/) | Prototype for BPJS Kesehatan Healthkathon 2026. Prioritizes health-insurance claims for audit using graph features across facilities, doctors, and patients. On 17,431 synthetic claims at a fixed audit capacity, it caught 436 fraudulent claims vs. 91 for a rule-based baseline. | Python · Streamlit · NetworkX · scikit-learn |
 | **[FoodSave](https://github.com/Yance30/foodsave)** · [demo](https://foodsave.infinityfree.me) | Platform that routes surplus food from shops, caterers, and canteens in Malang to recipients before it is wasted, and tracks food saved and CO₂e avoided. Three roles, provider verification, maps, and automated tests. | Laravel 12 · PHP · Tailwind CSS · Alpine.js |
-| **[BI Dashboard](https://github.com/Yance30/Big-Data)** | CSV-to-MySQL ETL pipeline with linear-regression forecasting and interactive Plotly visualizations. | Python · Streamlit · MySQL · scikit-learn |
+| **[JALA Fraud Analytics](https://github.com/Yance30/Jala)** · [demo](https://jala-fraud.streamlit.app/) | Prototype for BPJS Kesehatan Healthkathon 2026. Prioritizes health-insurance claims for audit using graph features across facilities, doctors, and patients. On 17,431 synthetic claims at a fixed audit capacity, it caught 436 fraudulent claims vs. 91 for a rule-based baseline. | Python · Streamlit · NetworkX · scikit-learn |
+| **[Kedai Rakdjat POS](https://portyance.vercel.app/)** · *private repo* | Local-first point-of-sale for a food stall: keeps taking orders offline on a tablet and syncs to the cloud when back online. Includes an owner revenue dashboard, kitchen display, QRIS payments, and Bluetooth receipt printing. | React · TypeScript · Tailwind CSS · Supabase · Dexie |
 | **[Tandur](https://github.com/Yance30/Tandur)** · [demo](https://tandur-psi.vercel.app/) | Web prototype that digitizes the *akad salam* (Islamic forward-sale) workflow for Islamic cooperatives. | JavaScript · HTML · CSS |
 
 ## Tech Stack
 
 - **Data & BI:** Python, Pandas, scikit-learn, NetworkX, Streamlit, Plotly, SQL, MySQL
-- **Web:** Laravel, PHP, JavaScript, TypeScript, React, Tailwind CSS
+- **Web:** Laravel, PHP, React, TypeScript, JavaScript, Tailwind CSS, Supabase
 - **Mobile:** Kotlin, Jetpack Compose
 - **Tools:** Git, GitHub Actions, Figma, Vercel
 
