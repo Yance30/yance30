@@ -64,8 +64,8 @@
     <g class="item" style="animation-delay:1.34s">
       <path d="M 865 184 V 204" stroke="#9a6700" stroke-opacity=".5" stroke-width="2"/>
       <text x="865" y="232" text-anchor="middle" font-family="Consolas, Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace" font-size="19" fill="#9a6700">NOV 2026</text>
-      <text x="865" y="266" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">1st Place YES-C</text>
-      <text x="865" y="296" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">national business plan</text>
+      <text x="865" y="266" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2328">2× 1st Place</text>
+      <text x="865" y="296" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#59636e">YES-C &amp; UMPWR business plan</text>
     </g>
     <circle class="ring" style="animation-delay:1.94s" cx="865" cy="170" r="9" fill="none" stroke="#9a6700" stroke-width="2.5"/>
     <circle class="node" style="animation-delay:1.34s" cx="865" cy="170" r="10" fill="#9a6700" stroke="#9a6700" stroke-width="3"/>

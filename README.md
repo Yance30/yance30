@@ -73,13 +73,13 @@ Information Systems student at the Faculty of Computer Science, Universitas Braw
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/numbers-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/cards/numbers-light.svg" />
-  <img src="assets/cards/numbers-dark.svg" width="100%" alt="6 apps shipped and live · 3 hackathons and competitions · 2 competition wins · 5 student organization roles" />
+  <img src="assets/cards/numbers-dark.svg" width="100%" alt="6 apps shipped and live · 4 hackathons and competitions · 2 competition wins · 5 student organization roles" />
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cards/journey-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/cards/journey-light.svg" />
-  <img src="assets/cards/journey-dark.svg" width="100%" alt="Timeline: 2025, three organization roles at KBMDSI. 2026, built JALA for BPJS Healthkathon. 2026, CivicPulse with a team for Web In Action MIA. November 2026, 1st place at YES-C national business plan competition. 2026, shipped Kedai Rakdjat POS and FoodSave. Now, open to internships in BI, data, and web." />
+  <img src="assets/cards/journey-dark.svg" width="100%" alt="Timeline: 2025, three organization roles at KBMDSI. 2026, built JALA for BPJS Healthkathon. 2026, CivicPulse with a team for Web In Action MIA. November 2026, 1st place in two business plan competitions, YES-C and UMPWR. 2026, shipped Kedai Rakdjat POS and FoodSave. Now, open to internships in BI, data, and web." />
 </picture>
 
 ---

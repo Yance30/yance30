@@ -377,7 +377,7 @@ function timelineCard(items, t) {
 
 const numbers = [
   { value: 6, label: 'apps shipped & live' },
-  { value: 3, label: 'hackathons & competitions' },
+  { value: 4, label: 'hackathons & competitions' },
   { value: 2, label: 'competition wins', gold: true },
   { value: 5, label: 'student organization roles' },
 ];
@@ -386,7 +386,7 @@ const journey = [
   { when: '2025', title: 'KBMDSI', sub: '3 organization roles' },
   { when: '2026', title: 'BPJS Healthkathon', sub: 'built JALA' },
   { when: '2026', title: 'Web In Action MIA', sub: 'CivicPulse · team' },
-  { when: 'NOV 2026', title: '1st Place YES-C', sub: 'national business plan', gold: true },
+  { when: 'NOV 2026', title: '2× 1st Place', sub: 'YES-C & UMPWR business plan', gold: true },
   { when: '2026', title: 'Shipped 2 products', sub: 'Kedai Rakdjat · FoodSave' },
   { when: 'NOW', title: 'Open to internships', sub: 'BI · data · web', now: true },
 ];
